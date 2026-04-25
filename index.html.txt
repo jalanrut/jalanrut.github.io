@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hannah Joy Diaries — UGC Creator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+  CONTENT FILE — Edit everything in this script tag to update
+  your website. No need to touch anything else!
+============================================================ -->
+
+<script id="site-content">
+const CONTENT = {
+
+  // ── YOUR DETAILS ──
+  name: "Hannah Joy",
+  fullName: "Hannah Apiluktoyanunt",
+  handle: "hannahjoydiaries",
+  age: "24",
+  location: "Sydney, Australia",
+  email: "hannahjoydiaries@gmail.com",
+  instagram: "540",
+  tiktok: "143",
+  instagramUrl: "https://instagram.com/hannahjoydiaries",
+  tiktokUrl: "https://tiktok.com/@hannahjoydiaries",
+  tagline: "Food & lifestyle content\nthat makes people stop scrolling.",
+  bio1: "Based in Sydney, I create authentic UGC content for food brands, restaurants, and cafes — from moody editorial photography to engaging video content for social ads.",
+  bio2: "My style blends moody, editorial photography with authentic on-camera video. Whether it's a new menu launch, a hero product, or a restaurant story — I make your brand feel irresistible.",
+  bio3: "I work with restaurants, cafes, and food & beverage brands to produce content they can use across social media, ads, and websites — no usage fees, no fuss.",
+
+  // ── HERO IMAGES (top 3 images shown on homepage) ──
+  heroImages: [
+    { src: "Restaurant 1.jpg", alt: "Restaurant content" },
+    { src: "Cafe 1.jpg", alt: "Cafe content" },
+    { src: "Bar 1.jpg", alt: "Bar content" },
+  ],
+
+  // ── ABOUT PHOTOS ──
+  aboutMainPhoto: "Cafe 2.jpg",
+  aboutAccentPhoto: "Restaurant 2.jpg",
+
+  // ── PORTFOLIO PHOTOS ──
+  photos: [
+    { src: "Restaurant 1.jpg", label: "Restaurant Visit", category: "restaurant" },
+    { src: "Cafe 1.jpg",       label: "Cafe Aesthetic",   category: "cafe" },
+    { src: "Bar 1.jpg",        label: "Bar & Drinks",     category: "bar" },
+    { src: "Cafe 2.jpg",       label: "Cafe Flatlay",     category: "cafe" },
+    { src: "Restaurant 2.jpg", label: "Dining Experience",category: "restaurant" },
+    { src: "Cafe 3.jpg",       label: "Coffee & Pastries",category: "cafe" },
+    { src: "Restaurant 3.jpg", label: "Share Plates",     category: "restaurant" },
+    { src: "Cafe 4.jpg",       label: "Cafe Vibes",       category: "cafe" },
+    { src: "Restaurant 4.jpg", label: "Fine Dining",      category: "restaurant" },
+  ],
+
+  // ── VIDEOS (paste your TikTok or Instagram reel links here) ──
+  videos: [
+    { url: "", label: "Food & Drinks", platform: "tiktok" },
+    { url: "", label: "Restaurant Review", platform: "tiktok" },
+    { url: "", label: "Cafe Content", platform: "instagram" },
+    { url: "", label: "UGC Ads", platform: "tiktok" },
+  ],
+
+  // ── SERVICES ──
+  services: [
+    {
+      num: "01",
+      name: "UGC Video",
+      desc: "Authentic short-form video content optimised for TikTok, Instagram Reels, and paid social ads. On-camera and voice-over styles available.",
+      includes: ["Organic UGC (no usage rights)", "UGC Ads (paid usage included)", "Raw B-Roll footage", "Voice over narration"]
+    },
+    {
+      num: "02",
+      name: "UGC Photography",
+      desc: "Moody, editorial-style food and lifestyle photography. Real, authentic imagery that performs on social.",
+      includes: ["Food & drink flatlay", "In-venue atmosphere shots", "Product showcase", "Story-driven sequences"]
+    },
+    {
+      num: "03",
+      name: "Influencer Partnership",
+      desc: "Paid partnerships posted on my Instagram and TikTok channels with authentic audience engagement.",
+      includes: ["Instagram feed or stories", "TikTok video posts", "Authentic reviews", "Audience reach & engagement"]
+    }
+  ],
+
+  // ── SPECIALTIES (shown in about section) ──
+  specialties: ["Creative Storytelling", "Voice Overs", "Aesthetic Photography", "Short Form Video", "Food & Drink", "B-Roll Footage"],
+
+  // ── RATES ──
+  // Set showRates to false if you want to hide pricing publicly
+  showRates: true,
+  ratesNote: "All packages include full usage rights for paid social ads. Custom bundles available — enquire below.",
+  rates: [
+    {
+      name: "Starter",
+      price: "$150",
+      unit: "per deliverable",
+      highlight: false,
+      description: "Perfect for brands wanting to test UGC content.",
+      items: ["1 x UGC video (60 sec)", "2 x revision rounds", "Raw footage included", "7 day turnaround"],
+    },
+    {
+      name: "Content Bundle",
+      price: "$400",
+      unit: "per package",
+      highlight: true, // this one gets highlighted as most popular
+      description: "Best value for brands ready to scale their content.",
+      items: ["3 x UGC videos", "5 x photos", "2 x revision rounds", "Usage rights included", "5 day turnaround"],
+    },
+    {
+      name: "Monthly Retainer",
+      price: "$900",
+      unit: "per month",
+      highlight: false,
+      description: "Ongoing content creation for consistent brand presence.",
+      items: ["8 x UGC videos", "10 x photos", "Unlimited revisions", "Priority turnaround", "Monthly strategy call"],
+    },
+  ],
+
+  // ── MARQUEE TEXT ──
+  marqueeItems: ["UGC Creator", "Food & Beverage", "Restaurants & Cafes", "Sydney Australia", "Aesthetic Photography", "Short Form Video", "Brand Storytelling", "Voice Over"],
+};
+</script>
+
+<style>
+  :root {
+    --cream: #F5F0E8;
+    --warm-white: #FAF8F4;
+    --espresso: #2C1810;
+    --terracotta: #A63D2F;
+    --caramel: #C4894F;
+    --sage: #8B9B7A;
+    --dusty-rose: #C9A09A;
+    --dark: #1A1410;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--espresso);
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background: rgba(245, 240, 232, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(44,24,16,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--espresso);
+    text-decoration: none;
+  }
+
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+
+  .nav-links a {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--espresso);
+    text-decoration: none;
+    opacity: 0.65;
+    transition: opacity 0.2s;
+  }
+
+  .nav-links a:hover { opacity: 1; }
+
+  .nav-cta {
+    background: var(--terracotta);
+    color: white !important;
+    opacity: 1 !important;
+    padding: 0.55rem 1.2rem;
+    border-radius: 2px;
+  }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 3rem 5rem 4rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 1px;
+    background: var(--terracotta);
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.5rem, 6vw, 6rem);
+    font-weight: 900;
+    line-height: 0.95;
+    color: var(--espresso);
+  }
+
+  .hero-name em { font-style: italic; color: var(--terracotta); }
+
+  .hero-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.2rem, 2vw, 1.7rem);
+    color: var(--caramel);
+    margin: 1.2rem 0 2rem;
+    line-height: 1.4;
+    white-space: pre-line;
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    opacity: 0.7;
+    max-width: 380px;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(44,24,16,0.12);
+    border-bottom: 1px solid rgba(44,24,16,0.12);
+  }
+
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--terracotta);
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+
+  .hero-btns { display: flex; gap: 1rem; align-items: center; }
+
+  .btn-primary {
+    background: var(--espresso);
+    color: var(--cream);
+    padding: 0.9rem 2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.25s;
+  }
+
+  .btn-primary:hover { background: var(--terracotta); }
+
+  .btn-secondary {
+    color: var(--espresso);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+
+  .btn-secondary:hover { opacity: 1; }
+
+  .hero-right { position: relative; overflow: hidden; }
+
+  .hero-img-container {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3px;
+  }
+
+  .hero-img-item { overflow: hidden; }
+  .hero-img-item:first-child { grid-column: 1/2; grid-row: 1/3; }
+
+  .hero-img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  .hero-img-item:hover img { transform: scale(1.05); }
+
+  .hero-overlay-text {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: white;
+    background: rgba(44,24,16,0.5);
+    backdrop-filter: blur(4px);
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+  }
+
+  /* ── MARQUEE ── */
+  .marquee-strip {
+    background: var(--terracotta);
+    color: white;
+    padding: 0.9rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .marquee-inner {
+    display: inline-flex;
+    animation: marquee 20s linear infinite;
+  }
+
+  .marquee-item {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .marquee-item::after { content: '✦'; opacity: 0.6; }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ── SECTIONS ── */
+  section { padding: 6rem 4rem; }
+
+  .section-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 1.5rem;
+    height: 1px;
+    background: var(--terracotta);
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--espresso);
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── ABOUT ── */
+  #about {
+    background: var(--warm-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .about-img-wrap { position: relative; }
+
+  .about-img-main {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 3px;
+    display: block;
+  }
+
+  .about-img-accent {
+    position: absolute;
+    bottom: -2rem;
+    right: -2rem;
+    width: 55%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 4px solid var(--warm-white);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  }
+
+  .about-tag {
+    position: absolute;
+    top: 1.5rem;
+    left: -1.5rem;
+    background: var(--terracotta);
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    padding: 0.4rem 1.2rem;
+    border-radius: 2px;
+    transform: rotate(-3deg);
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+    line-height: 1.9;
+    opacity: 0.75;
+    margin-bottom: 1.2rem;
+  }
+
+  .specialties { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2rem; }
+
+  .specialty-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    border: 1px solid rgba(44,24,16,0.2);
+    border-radius: 2px;
+    opacity: 0.7;
+  }
+
+  /* ── PORTFOLIO ── */
+  #portfolio { background: var(--cream); }
+
+  .portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+  }
+
+  .portfolio-tabs { display: flex; gap: 0.5rem; }
+
+  .tab-btn {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid rgba(44,24,16,0.2);
+    background: transparent;
+    color: var(--espresso);
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s;
+    opacity: 0.6;
+  }
+
+  .tab-btn.active, .tab-btn:hover {
+    background: var(--espresso);
+    color: var(--cream);
+    border-color: var(--espresso);
+    opacity: 1;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .portfolio-item:nth-child(1) { grid-row: span 2; }
+  .portfolio-item:nth-child(5) { grid-column: span 2; }
+
+  .portfolio-img {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .portfolio-item:nth-child(1) .portfolio-img { min-height: 460px; }
+  .portfolio-item:nth-child(5) .portfolio-img { min-height: 280px; }
+
+  .portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(26,20,16,0.75) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.35s;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+  }
+
+  .portfolio-item:hover .portfolio-overlay { opacity: 1; }
+  .portfolio-item:hover .portfolio-img { transform: scale(1.04); }
+
+  .portfolio-overlay-text h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 0.2rem;
+  }
+
+  .portfolio-overlay-text span {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.7;
+  }
+
+  /* ── VIDEO SECTION ── */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .video-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone-frame {
+    background: var(--espresso);
+    border-radius: 2.5rem;
+    padding: 0.6rem;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+
+  .video-phone:hover .phone-frame { transform: translateY(-6px); }
+
+  .phone-screen {
+    border-radius: 2rem;
+    overflow: hidden;
+    aspect-ratio: 9/16;
+    background: #111;
+    position: relative;
+  }
+
+  .phone-screen iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+  .phone-screen .video-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark);
+    color: var(--caramel);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0.6;
+  }
+
+  .phone-label {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  /* ── SERVICES ── */
+  #services { background: var(--espresso); color: var(--cream); }
+  #services .section-label { color: var(--caramel); }
+  #services .section-label::before { background: var(--caramel); }
+  #services .section-title { color: var(--cream); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    margin-top: 3rem;
+  }
+
+  .service-card {
+    background: var(--espresso);
+    padding: 2.5rem;
+    border: 1px solid rgba(245,240,232,0.08);
+    transition: background 0.3s;
+  }
+
+  .service-card:hover { background: rgba(166,61,47,0.15); }
+
+  .service-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--terracotta);
+    opacity: 0.3;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .service-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--cream);
+    margin-bottom: 1rem;
+  }
+
+  .service-desc {
+    font-size: 0.85rem;
+    line-height: 1.8;
+    color: var(--cream);
+    opacity: 0.55;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-includes { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+
+  .service-includes li {
+    font-size: 0.75rem;
+    color: var(--caramel);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .service-includes li::before { content: '→'; opacity: 0.6; }
+
+  /* ── RATES ── */
+  #rates { background: var(--warm-white); }
+
+  .rates-note {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--caramel);
+    margin-bottom: 3rem;
+    max-width: 500px;
+    line-height: 1.6;
+  }
+
+  .rates-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .rate-card {
+    background: white;
+    border: 1px solid rgba(44,24,16,0.08);
+    border-radius: 4px;
+    padding: 2.5rem;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .rate-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  }
+
+  .rate-card.highlighted { background: var(--espresso); border-color: var(--espresso); }
+
+  .rate-popular {
+    position: absolute;
+    top: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--terracotta);
+    color: white;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.3rem 1rem;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  .rate-name {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+  }
+
+  .rate-card.highlighted .rate-name { color: var(--cream); }
+
+  .rate-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--terracotta);
+    line-height: 1;
+  }
+
+  .rate-unit {
+    font-size: 0.75rem;
+    opacity: 0.45;
+    margin-bottom: 1.2rem;
+    display: block;
+    margin-top: 0.3rem;
+  }
+
+  .rate-card.highlighted .rate-unit { color: var(--cream); }
+
+  .rate-desc {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    opacity: 0.6;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(44,24,16,0.1);
+  }
+
+  .rate-card.highlighted .rate-desc { color: var(--cream); border-color: rgba(245,240,232,0.15); }
+
+  .rate-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .rate-items li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    opacity: 0.75;
+  }
+
+  .rate-card.highlighted .rate-items li { color: var(--cream); }
+  .rate-items li::before { content: '✓'; color: var(--terracotta); font-weight: 700; flex-shrink: 0; }
+  .rate-card.highlighted .rate-items li::before { color: var(--caramel); }
+
+  .rate-cta {
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+    border: 1px solid rgba(44,24,16,0.2);
+    border-radius: 2px;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--espresso);
+    transition: all 0.2s;
+  }
+
+  .rate-cta:hover { background: var(--espresso); color: var(--cream); border-color: var(--espresso); }
+  .rate-card.highlighted .rate-cta { background: var(--terracotta); border-color: var(--terracotta); color: white; }
+  .rate-card.highlighted .rate-cta:hover { background: var(--caramel); border-color: var(--caramel); }
+
+  @media (max-width: 768px) {
+    .rates-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── CONTACT ── */
+  #contact {
+    background: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+    line-height: 1.9;
+    opacity: 0.65;
+    margin-bottom: 2rem;
+    max-width: 380px;
+  }
+
+  .contact-details { display: flex; flex-direction: column; gap: 1.2rem; margin-top: 2rem; }
+
+  .contact-detail { display: flex; align-items: center; gap: 1rem; font-size: 0.85rem; }
+
+  .contact-detail-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.45;
+    min-width: 80px;
+  }
+
+  .contact-detail a {
+    color: var(--espresso);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+
+  .contact-detail a:hover { opacity: 1; }
+
+  .contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+
+  .form-group label {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(44,24,16,0.2);
+    padding: 0.7rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    color: var(--espresso);
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+  }
+
+  .form-group select { appearance: none; cursor: pointer; }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-bottom-color: var(--terracotta); }
+
+  .form-group textarea { resize: none; height: 80px; }
+  .form-group input::placeholder, .form-group textarea::placeholder { opacity: 0.35; }
+
+  .form-checkboxes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-top: 0.5rem; }
+
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    font-size: 0.78rem;
+    opacity: 0.7;
+  }
+
+  .checkbox-item input { width: auto; border: none; }
+
+  .submit-btn {
+    background: var(--terracotta);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background 0.25s;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .submit-btn:hover { background: var(--espresso); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--dark);
+    color: var(--cream);
+    padding: 2.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+
+  .footer-copy { font-size: 0.7rem; opacity: 0.35; }
+
+  .footer-socials { display: flex; gap: 1.5rem; }
+
+  .footer-socials a {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cream);
+    opacity: 0.4;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .footer-socials a:hover { opacity: 1; }
+
+  /* ── ANIMATIONS ── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── MOBILE ── */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    #hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 6rem 1.5rem 3rem; }
+    .hero-right { height: 60vw; }
+    section { padding: 4rem 1.5rem; }
+    #about { grid-template-columns: 1fr; gap: 3rem; }
+    .about-img-accent { display: none; }
+    .about-tag { left: 1rem; }
+    .portfolio-grid { grid-template-columns: 1fr 1fr; }
+    .portfolio-item:nth-child(1) { grid-row: auto; }
+    .portfolio-item:nth-child(5) { grid-column: auto; }
+    .video-grid { grid-template-columns: 1fr 1fr; }
+    .services-grid { grid-template-columns: 1fr; }
+    #contact { grid-template-columns: 1fr; gap: 3rem; }
+    .form-row { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 1.5rem; text-align: center; padding: 2rem 1.5rem; }
+    .portfolio-header { flex-direction: column; gap: 1.5rem; align-items: flex-start; }
+  }
+</style>
+
+</head>
+<body>
+
+<!-- NAV -->
+
+<nav>
+  <a href="#" class="nav-logo" id="nav-logo"></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#rates">Rates</a></li>
+    <li><a href="#contact" class="nav-cta">Work With Me</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+
+<section id="hero">
+  <div class="hero-left fade-up">
+    <span class="hero-eyebrow" id="hero-eyebrow"></span>
+    <h1 class="hero-name" id="hero-name"></h1>
+    <p class="hero-tagline" id="hero-tagline"></p>
+    <p class="hero-desc" id="hero-desc"></p>
+    <div class="hero-stats" id="hero-stats"></div>
+    <div class="hero-btns">
+      <a href="#portfolio" class="btn-primary">View Portfolio</a>
+      <a href="#contact" class="btn-secondary">Get In Touch →</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-container" id="hero-images"></div>
+    <div class="hero-overlay-text">Available for collaborations</div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+
+<div class="marquee-strip">
+  <div class="marquee-inner" id="marquee"></div>
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <div class="about-img-wrap fade-up">
+    <img class="about-img-main" id="about-main-img" src="" alt="Hannah Joy">
+    <img class="about-img-accent" id="about-accent-img" src="" alt="Content sample">
+    <div class="about-tag">Sydney-based ✦</div>
+  </div>
+  <div class="about-text fade-up">
+    <span class="section-label">About Me</span>
+    <h2 class="section-title" id="about-title"></h2>
+    <div id="about-bio"></div>
+    <div class="specialties" id="specialties"></div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+  <div class="portfolio-header fade-up">
+    <div>
+      <span class="section-label">My Work</span>
+      <h2 class="section-title">Portfolio</h2>
+    </div>
+    <div class="portfolio-tabs">
+      <button class="tab-btn active" onclick="showTab(this,'photo')">Photography</button>
+      <button class="tab-btn" onclick="showTab(this,'video')">Video</button>
+    </div>
+  </div>
+  <div id="tab-photo" class="portfolio-grid fade-up"></div>
+  <div id="tab-video" class="video-grid fade-up" style="display:none;"></div>
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+  <div class="fade-up">
+    <span class="section-label">What I Offer</span>
+    <h2 class="section-title">Services &<br><em style="font-style:italic;font-family:'Playfair Display',serif;">Packages</em></h2>
+  </div>
+  <div class="services-grid fade-up" id="services-grid"></div>
+</section>
+
+<!-- RATES -->
+
+<section id="rates">
+  <div class="fade-up">
+    <span class="section-label">Pricing</span>
+    <h2 class="section-title">Rates &<br><em style="font-style:italic;font-family:'Playfair Display',serif;">Packages</em></h2>
+    <p class="rates-note" id="rates-note"></p>
+  </div>
+  <div class="rates-grid fade-up" id="rates-grid"></div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+  <div class="contact-info fade-up">
+    <span class="section-label">Get In Touch</span>
+    <h2 class="section-title">Let's Work<br><em style="font-style:italic;font-family:'Playfair Display',serif;">Together.</em></h2>
+    <p>Ready to create content that actually moves the needle? Fill out the form and I'll be in touch within 48 hours.</p>
+    <div class="contact-details" id="contact-details"></div>
+  </div>
+  <div class="contact-form fade-up">
+    <div data-fs-success style="display:none; background: var(--sage); color: white; padding: 1rem 1.5rem; border-radius: 3px; font-size: 0.85rem; margin-bottom: 1rem;">
+      ✓ Thanks! I'll be in touch within 48 hours.
+    </div>
+    <div data-fs-error style="display:none; background: #c0392b; color: white; padding: 1rem 1.5rem; border-radius: 3px; font-size: 0.85rem; margin-bottom: 1rem;">
+      Something went wrong — please try again or email me directly.
+    </div>
+    <form id="contact-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label>Brand Name *</label>
+        <input type="text" name="brandName" placeholder="Your brand" data-fs-field required>
+        <span data-fs-error="brandName" style="color: var(--terracotta); font-size: 0.72rem;"></span>
+      </div>
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" name="email" placeholder="hello@brand.com" data-fs-field required>
+        <span data-fs-error="email" style="color: var(--terracotta); font-size: 0.72rem;"></span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>What are you interested in?</label>
+      <div class="form-checkboxes">
+        <label class="checkbox-item"><input type="checkbox" name="interested" value="Organic UGC"> Organic UGC</label>
+        <label class="checkbox-item"><input type="checkbox" name="interested" value="UGC Ads"> UGC Ads</label>
+        <label class="checkbox-item"><input type="checkbox" name="interested" value="UGC Photography"> UGC Photography</label>
+        <label class="checkbox-item"><input type="checkbox" name="interested" value="Influencer Partnership"> Influencer Partnership</label>
+        <label class="checkbox-item"><input type="checkbox" name="interested" value="Raw B-Roll"> Raw B-Roll</label>
+        <label class="checkbox-item"><input type="checkbox" name="interested" value="Other"> Other</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>How did you find me?</label>
+      <select name="source">
+        <option value="" disabled selected>Select one</option>
+        <option>My Instagram</option>
+        <option>My TikTok</option>
+        <option>Another Brand's Platform</option>
+        <option>Word of Mouth</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Scope of Work</label>
+      <textarea name="scope" placeholder="Briefly describe what you need..." data-fs-field></textarea>
+    </div>
+    <button type="submit" class="submit-btn" data-fs-submit-btn>Send Enquiry →</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+  <span class="footer-logo" id="footer-logo"></span>
+  <span class="footer-copy" id="footer-copy"></span>
+  <div class="footer-socials" id="footer-socials"></div>
+</footer>
+
+<script>
+// ── BUILD PAGE FROM CONTENT ──
+const C = CONTENT;
+
+// Nav
+document.getElementById('nav-logo').textContent = C.handle;
+
+// Hero
+document.getElementById('hero-eyebrow').textContent = `UGC Creator · ${C.location}`;
+document.getElementById('hero-name').innerHTML = `${C.name.split(' ')[0]}<br><em>${C.name.split(' ')[1]}.</em>`;
+document.getElementById('hero-tagline').textContent = C.tagline;
+document.getElementById('hero-desc').textContent = C.bio1;
+
+document.getElementById('hero-stats').innerHTML = `
+  <div class="stat-item"><span class="stat-num">${C.instagram}</span><span class="stat-label">Instagram</span></div>
+  <div class="stat-item"><span class="stat-num">${C.tiktok}</span><span class="stat-label">TikTok</span></div>
+  <div class="stat-item"><span class="stat-num">2+</span><span class="stat-label">Years Creating</span></div>
+`;
+
+// Hero images
+const heroImgContainer = document.getElementById('hero-images');
+C.heroImages.forEach((img, i) => {
+  const div = document.createElement('div');
+  div.className = 'hero-img-item';
+  div.innerHTML = `<img src="${img.src}" alt="${img.alt}" loading="lazy">`;
+  heroImgContainer.appendChild(div);
+});
+
+// Marquee
+const marqueeInner = document.getElementById('marquee');
+const items = [...C.marqueeItems, ...C.marqueeItems];
+marqueeInner.innerHTML = items.map(i => `<span class="marquee-item">${i}</span>`).join('');
+
+// About
+document.getElementById('about-main-img').src = C.aboutMainPhoto;
+document.getElementById('about-accent-img').src = C.aboutAccentPhoto;
+document.getElementById('about-title').innerHTML = `Hi, I'm<br><em style="font-style:italic;font-family:'Playfair Display',serif;">${C.fullName.split(' ')[0]}.</em>`;
+document.getElementById('about-bio').innerHTML = `<p>${C.bio1}</p><p>${C.bio2}</p><p>${C.bio3}</p>`;
+document.getElementById('specialties').innerHTML = C.specialties.map(s => `<span class="specialty-tag">${s}</span>`).join('');
+
+// Portfolio photos
+const photoGrid = document.getElementById('tab-photo');
+C.photos.forEach(p => {
+  photoGrid.innerHTML += `
+    <div class="portfolio-item">
+      <img class="portfolio-img" src="${p.src}" alt="${p.label}" loading="lazy">
+      <div class="portfolio-overlay">
+        <div class="portfolio-overlay-text">
+          <h4>${p.label}</h4>
+          <span>${p.category}</span>
+        </div>
+      </div>
+    </div>`;
+});
+
+// Videos
+const videoGrid = document.getElementById('tab-video');
+C.videos.forEach(v => {
+  const content = v.url
+    ? `<iframe src="${v.url}" allowfullscreen></iframe>`
+    : `<div class="video-placeholder">📱<br><br>Add your ${v.platform} link<br>in content.js</div>`;
+  videoGrid.innerHTML += `
+    <div class="video-phone">
+      <div class="phone-frame"><div class="phone-screen">${content}</div></div>
+      <p class="phone-label">${v.label}</p>
+    </div>`;
+});
+
+// Services
+const servicesGrid = document.getElementById('services-grid');
+C.services.forEach(s => {
+  servicesGrid.innerHTML += `
+    <div class="service-card">
+      <span class="service-num">${s.num}</span>
+      <h3 class="service-name">${s.name}</h3>
+      <p class="service-desc">${s.desc}</p>
+      <ul class="service-includes">${s.includes.map(i => `<li>${i}</li>`).join('')}</ul>
+    </div>`;
+});
+
+// Contact
+document.getElementById('contact-details').innerHTML = `
+  <div class="contact-detail"><span class="contact-detail-label">Email</span><a href="mailto:${C.email}">${C.email}</a></div>
+  <div class="contact-detail"><span class="contact-detail-label">Location</span><span style="opacity:0.7;font-size:0.85rem;">${C.location}</span></div>
+  <div class="contact-detail"><span class="contact-detail-label">Instagram</span><a href="${C.instagramUrl}" target="_blank">@${C.handle}</a></div>
+  <div class="contact-detail"><span class="contact-detail-label">TikTok</span><a href="${C.tiktokUrl}" target="_blank">@${C.handle}</a></div>
+`;
+
+// Footer
+document.getElementById('footer-logo').textContent = C.handle;
+document.getElementById('footer-copy').textContent = `© 2025 ${C.fullName} · ${C.location}`;
+document.getElementById('footer-socials').innerHTML = `
+  <a href="${C.instagramUrl}" target="_blank">Instagram</a>
+  <a href="${C.tiktokUrl}" target="_blank">TikTok</a>
+  <a href="mailto:${C.email}">Email</a>
+`;
+
+// Rates
+if (C.showRates) {
+  document.getElementById('rates-note').textContent = C.ratesNote;
+  const ratesGrid = document.getElementById('rates-grid');
+  C.rates.forEach(r => {
+    ratesGrid.innerHTML += `
+      <div class="rate-card ${r.highlight ? 'highlighted' : ''}">
+        ${r.highlight ? '<span class="rate-popular">Most Popular</span>' : ''}
+        <p class="rate-name">${r.name}</p>
+        <div class="rate-price">${r.price}</div>
+        <span class="rate-unit">${r.unit}</span>
+        <p class="rate-desc">${r.description}</p>
+        <ul class="rate-items">${r.items.map(i => `<li>${i}</li>`).join('')}</ul>
+        <a href="#contact" class="rate-cta">Enquire Now</a>
+      </div>`;
+  });
+} else {
+  document.getElementById('rates').style.display = 'none';
+}
+
+// Formspree — Vanilla JS Ajax integration
+window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+formspree('initForm', { formElement: '#contact-form', formId: 'mqewnojz' });
+
+// Tab switching
+function showTab(btn, tab) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-photo').style.display = tab === 'photo' ? 'grid' : 'none';
+  document.getElementById('tab-video').style.display = tab === 'video' ? 'grid' : 'none';
+}
+
+// Scroll animations
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(el => { if (el.isIntersecting) el.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
+</body>
+</html>
